@@ -1,0 +1,287 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic");
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+/*
+
+Global Selectors
+
+Global Selectors are selectors that affect more than one component. If the selector name ends in the :alias pseudo-class, then the selector is most likely included in other component-specific selectors. Defining properties for a selector that ends in :alias will most likely affect the skin for more than one component. For example, most, if not all of our components use the .AFDefaultFontFamily:alias definition to specify the font-family. If your skin overrides the .AFDefaultFontFamily:alias selector with a different font-family, that change will affect all the components that have included it in their selector definition.
+Color
+
+are included in other components. Then to change the color scheme, you would change these core/accent color ramps and it will affect all the components it is including in.
+Color->Unclassified Color
+
+Colors that are not classified as either Anchor, Derivative, or Specialty colors.*/
+/*The darkest background color in the core color ramp.  Only used by fusion skins.*/
+/*The darkest foreground color in the core color ramp.  Only used by fusion skins.*/
+/*The dark background color in the core color ramp. Only used by fusion skins.*/
+/*The dark foreground color in the core color ramp. Only used by fusion skins.*/
+/*The medium background color in the core color ramp. Only used by fusion skins.*/
+/*The medium foreground color in the core color ramp. Only used by fusion skins.*/
+/*The light background color in the core color ramp.  Only used by fusion skins.*/
+/*The light foreground color in the core color ramp.  Only used by fusion skins.*/
+/*The very light background color in the core color ramp. Only used by fusion skins.*/
+/*The very light foreground color in the core color ramp. Only used by fusion skins.*/
+/*The darkest background color in the accent color ramp.  Only used by fusion skins.*/
+/*The darkest foreground color in the accent color ramp.  Only used by fusion skins.*/
+/*The dark background color in the accent color ramp. Only used by fusion skins.*/
+/*The dark foreground color in the accent color ramp. Only used by fusion skins.*/
+/*The medium background color in the accent color ramp. Only used by fusion skins.*/
+/*The medium foreground color in the accent color ramp. Only used by fusion skins.*/
+/*The light background color in the accent color ramp.  Only used by fusion skins.*/
+/*The light foreground color in the accent color ramp.  Only used by fusion skins.*/
+/*The lightest background color in the accent color ramp. Only used by fusion skins.*/
+/*The lightest foreground color in the accent color ramp. Only used by fusion skins.*/
+/*A bright background color that is often used when hovering  Only used by fusion skins.*/
+/*A bright foreground color that is often used when hovering  Only used by fusion skins.*/
+/*A light bright background color that is often used when hovering  Only used by fusion skins.*/
+/*A light bright foreground color that is often used when hovering  Only used by fusion skins.*/
+/*A light color that often indicates "inactive selected", for example this color might be used on a table row that is selected when the table does not have focus.  Only used by fusion skins.*/
+/*This is the darkest background color in the neutral color ramp, for example black.  Only used by fusion skins.*/
+/*This is the darkest foreground color in the neutral color ramp, for example black.  Only used by fusion skins.*/
+/*The light background color in the neutral color ramp. Only used by fusion skins.*/
+/*The light foreground color in the neutral color ramp. Only used by fusion skins.*/
+/*The lightest background color in the neutral color ramp, for example white. Only used by fusion skins.*/
+/*The lightest foreground color in the neutral color ramp, for example white. Only used by fusion skins.*/
+/*The disabled background color used to color components in a disabled state, like disabled buttons or content in a disabled inputText.*/
+/*Shadow color for popup and windows. Only used by skyros skins.*/
+/*A background color used for the main content area of your page. For example, the background color for the content area of the selected tab or the the background color for the decorative box theme = default/light. See also AFBackground2Color. Only used by skyros skins.*/
+/*Color used in many of our data view and container components for the background of their content areas. For example, the content body background of the PanelAccordion or the background of cells in a table. By default, this is the same color as the AFBackgroundColor.  Only used by skyros skins.*/
+.AFComponentBackgroundColor:alias {
+  color: white; }
+
+/*Color of text in the global area. Only used by skyros skins.*/
+/*Color of labels in the global area. Only used by skyros skins.*/
+/*Color of links in the branding area.  Only used by skyros skins.*/
+/*Color of the default font for text. Only used by skyros skins.*/
+.AFTextColor:alias {
+  color: #434A54; }
+
+/*Color of the foreground of badge. Only used by skyros skins.*/
+/*Color of the border of badge. Only used by skyros skins.*/
+/*An accent color used sparingly in select components, generally for highlighting on hover. For example, splitter control highlight on hover or table row header on hover.  Only used by skyros skins.*/
+/*An accent color used sparingly in select components, generally for highlighting on hover. For example, table cell background color on hover.  Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). Specifically, the grid cell background color when selected and inactive.  Only used by skyros skins.*/
+/*Active data background color when twinkle is on.  Only used by skyros skins.*/
+/*The color for links in the global area. Only used by skyros skins.*/
+/*Color used during drag and drop. Specifically, the backround color of the drop target.  Only used by skyros skins.*/
+/*Color used as for header text across our components. For example, the titles in PanelHeader, Query, and PanelAccordion. Only used by skyros skins.*/
+/*Color of required field indicator for form components.  Only used by skyros skins.*/
+/*Border color for form control content.  Only used by skyros skins.*/
+/*Background color for form control content.  Only used by skyros skins.*/
+/*Default background color of tabs in PanelTabbed and NavigationPane (hint=tabs). Only used by skyros skins.*/
+/*Border color used in many of our panel components such as panelBox, panelHeader etc.  Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). Specifically, the grid drag line color. Only used by skyros skins.*/
+/*A background color used in the main content area of your page. This background color is typically used when providing a layered look in the content area. For example, the background color for the decorative box theme = medium. See also AFBackgroundColor.  Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). Specifically, the background color for a grid cell in active state. Only used by skyros skins.*/
+/*Color of required field indicator for form components in the global area. Only used by skyros skins.*/
+/*Default background color in the global area.  Only used by skyros skins.*/
+/*A border color used for the main content area of your page. For example, the border color for the content area of the selected tab or the the background color for the decorative box theme = default/light. See also AFBackgroundBorder2Color. Only used by skyros skins.*/
+/*Default background color of tabs in the global area.  Only used by skyros skins.*/
+/*Window barder color.  Only used by skyros skins.*/
+/*Accordion header start gradient background color. Only used by skyros skins.*/
+/*Color used to indicate a selected state. For example, background color for the selected node in a tree or background of selected choice in a dropdown.  Only used by skyros skins.*/
+/*Slider tick mark color. Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). For example, the background of the column header, status bar, footer row of the table and the legend area and header in Scheduling Gantt. Only used by skyros skins.*/
+/*The default foreground color for links. Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). For example, the row headers in the table or the filter bar in the pivot table. Only used by skyros skins.*/
+/*Color of disabled text. Only used by skyros skins.*/
+/*Color of disabled links in global area. Only used by skyros skins.*/
+/*Color of disabled links in branding area. Only used by skyros skins.*/
+/*Disabled form control content background color. Only used by skyros skins.*/
+/*A top border color used in the main content area of your page. This border color corresponds with the AFBackground2Color. Only used by skyros skins.*/
+/*Color for links in the active state.  Only used by skyros skins.*/
+/*Color for active links in the brading area. Only used by skyros skins.*/
+/*Color for active links in the brading area. Only used by skyros skins.*/
+/*
+Color->Derivative Color
+
+Color aliases are are derivatives of the core anchor color aliases.
+Selector Name Description Conditions*/
+/*Color used sparingly in select components. It is stronger than the default font color. For example, the header, row and footer labels in the table and the selected tab text. Only used by skyros skins.*/
+/*Color used for form control labels. It is slightly lighter than the default font color. Only used by skyros skins.*/
+/*Color used sparingly in select components. It is slightly lighter than the default font color. For example, instrucional text.  Only used by skyros skins.*/
+/*Color used sparingly in select components. It is lighter than the default font color. For example, placeholder text in inputText. Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). Specifically, the grid cell border color. Only used by skyros skins.*/
+/*Help border color.  Only used by skyros skins.*/
+/*A secondary color used in some of our data view and container components. This is slightly stronger color than the AFComponentBackgroundColor to provide contrast. For example, the background of the banded data cells of the background color of a modal dialog.  Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). Specifically, the background color for the header when selected and inactive. Only used by skyros skins.*/
+/*Second drop target color used during drag and drop in some components.  Only used by skyros skins.*/
+/*Disabled tab border color.  Only used by skyros skins.*/
+/*Second panel border color used acro components such as Table and Calendar. See also AFPanelBorderColor  Only used by skyros skins.*/
+/*Background top border color.  Only used by skyros skins.*/
+/*Accordion border color. Only used by skyros skins.*/
+/*Background left, top, and right border color. Only used by skyros skins.*/
+/*Progress current value color. Only used by skyros skins.*/
+/*Disabled tab background color in the global area. Only used by skyros skins.*/
+/*Progress current value color in the global area.  Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). For example, the background color for the header when in selected state.  Only used by skyros skins.*/
+/*Slider tick mark at zero color. Only used by skyros skins.*/
+/*Tab border color in global area.  Only used by skyros skins.*/
+/*Accordion header end gradient background color. Only used by skyros skins.*/
+/*Default tab border color. Only used by skyros skins.*/
+/*Disabled Tab background color.  Only used by skyros skins.*/
+/*Selected date background color. Only used by skyros skins.*/
+/*Border color for a disabled tab in the global area. Only used by skyros skins.*/
+/*Color used in many of our grid style components (ie. Table, Pivot Table, Calendar, Scheduling Gannt). For example, the background color for the header when in active state.  Only used by skyros skins.*/
+/*List separator color. Only used by skyros skins.*/
+/*Disabled link color.  Only used by skyros skins.*/
+/*Disabled form control content border color. Only used by skyros skins.*/
+/*Color
+
+Specialty Color
+
+Infrequently used specialty color alias
+*/
+/*Background color for the code editor. Only used by skyros skins.*/
+/*Background color for progress area. Only used by skyros skins.*/
+/*Line number text color for code editor. Only used by skyros skins.*/
+/*Swatch border color.  Only used by skyros skins.*/
+/*Color to distinguish errors.  Only used by skyros skins.*/
+/*Color to distinguish errors in code editor. Only used by skyros skins.*/
+/*Color to distinguish warnings.  Only used by skyros skins.*/
+/*Color to distinguish warnings in code editor. Only used by skyros skins.*/
+/*PanelBox highlight medium color.  Only used by skyros skins.*/
+/*PanelBox highlight light color. Only used by skyros skins.*/
+/*Code editor highlight color.  Only used by skyros skins.*/
+/*Freeze line color.  Only used by skyros skins.*/
+/*Code editor line number border color. Only used by skyros skins.*/
+/*Color used for disabled tick mark in the slider. It is lighter than the default font color. Only used by skyros skins.*/
+/*Slider slide bar color. Only used by skyros skins.*/
+/*PanelBox highlight dark color.  Only used by skyros skins.*/
+/*Carousel focus border color.  Only used by skyros skins.*/
+/*Background color for code editor active area. Only used by skyros skins.*/
+/*PanelBox core dark color. Only used by skyros skins.*/
+/*Code editor toolbar background color. Only used by skyros skins.*/
+/*Code editor disabled text color.  Only used by skyros skins.*/
+/*Color used for numeral text of for disabled days in the inputDate component. It is lighter than the default font color. Only used by skyros skins.*/
+/*Next date color.  Only used by skyros skins.*/
+/*Slider numeral color. Only used by skyros skins.*/
+/*Page stamp text color.  Only used by skyros skins.*/
+/*Code Editor disabled background color.  Only used by skyros skins.*/
+/*Slider thumb text color.  Only used by skyros skins.*/
+/*FONTS*/
+/*import web fonts here*/
+/*Specifies the default font for the skin. This style defines both the default font family (as specified by the AFDefaultFontFamily named style), the default font size, and default font weight.*/
+.AFDefaultFont:alias {
+  font-size: 14px;
+  line-height: 18px; }
+
+/*Includes AFDefaultFont:alias,and sets the font-weight to bold.*/
+.AFDefaultBoldFont:alias {
+  font-weight: 700; }
+
+/*Specifies the default font family list ("font-family" property) for the skin.*/
+.AFDefaultFontFamily:alias {
+  font-family: 'Ubuntu', Tahoma, Verdana, Helvetica, sans-serif; }
+
+/*Specifies the font for small sized header text.*/
+.AFSmallHeaderFont:alias {
+  font-size: 16px; }
+
+/*Specifies the font for medium sized header text.*/
+.AFMediumHeaderFont:alias {
+  font-size: 20px; }
+
+/*Specifies the font for large sized header text.*/
+.AFLargeHeaderFont:alias {
+  font-size: 24px; }
+
+/*TEXT*/
+/*Specifies the color of the font for text. Only used by fusion skins.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+/* ==========================================================================
+    BUTTONS    
+    ========================================================================== */
+/* 
+     Base Buttons Vars
+     ========================================================================== */
+/* The start gradient color for a button.  Only used by skyros skins. */
+.AFButtonGradientStartColor:alias {
+  color: fuchsia; }
+
+/* The end gradient color for a button.  Only used by skyros skins. */
+/* Left, top, and right border color for a button. Only used by skyros skins. */
+/* Bottom border color for a button. Only used by skyros skins. */
+/* 
+     Disabled Buttons Vars
+     ========================================================================== */
+/* Start color for disabled button gradient background.  Only used by skyros skins. */
+/* End color for button gradient background during hover.  Only used by skyros skins. */
+/* Color used for disabled button borders. It is slightly deeper than the disabled button background gradient start. Only used by skyros skins. */
+/* 
+   Hover Buttons Vars
+   ========================================================================== */
+/*Start color for button gradient background during hover.  Only used by skyros skins.*/
+/*End color for disabled button gradient background.  Only used by skyros skins.*/
+/*Top, left, and right border color for button during hover.  Only used by skyros skins.*/
+/*Bottom border color for button during hover.  Only used by skyros skins.*/
+/* 
+   Active Buttons Vars
+   ========================================================================== */
+/*Start gradient background color for button in active state. Only used by skyros skins.*/
+/*End gradient background color for a button in active state. Only used by skyros skins.*/
+/*Left, top, and right border color for an active button. Only used by skyros skins.*/
+/*Top border color for button in active state.  Only used by skyros skins.*/
+/* 
+   base button classes
+   ========================================================================== */
+/*Specifies the access key style for af|Button, af|commandButton, af|goButton, af|resetButton.*/
+/*Specifies the background for buttons that include this style alias,*/
+/*like af|button, af|commandButton, af|goButton, af|resetButton, af|trainButtonBar. Skinning the .AFButton* aliase*/
+/*s is meant to be a short-cut for the skin developer and it can help ensure that all buttons are skinned the same since all button components include these aliase*/
+/*s in the base skin. Please note that for buttons :active and :focus pseudo-classes do not work in IE7. IE7 also does not allow disabled buttons to be styled.*/
+.AFButtonBackground:alias {
+  -tr-inhibit: background-image;
+  background-image: none;
+  /*background-image: linear-gradient(top, -tr-property-ref(".AFButtonGradientStartColor:alias","color") 0%, -tr-property-ref(".AFButtonGradientEndColor:alias","color") 100%); */
+  /*background-color:red;*/ }
+
+/*Specifies the foreground for buttons.*/
+/*Specifies the border for buttons that include this style alias,*/
+/*like af|button, af|commandButton, af|goButton, af|resetButton.*/
+/* 
+   Disabled Button classes
+   ========================================================================== */
+/*Specifies the background for buttons in the disabled state.*/
+/*Specifies the border for buttons in the disabled state.*/
+/*Specifies the foreground for buttons in the disabled state.*/
+/* 
+   Active Button Classses
+   ========================================================================== */
+/*Specifies the background for buttons in the active state (mouse down).*/
+/*Specifies the border for buttons in the active state.*/
+/*Specifies the foreground for buttons in the depressed state.*/
+/* 
+   Hover Button Classes
+   ========================================================================== */
+/*Specifies the background for buttons in the hover state (mouse over).*/
+/*Specifies the foreground for buttons in the hover state.*/
+/*Specifies the border for buttons in the hover state.*/
+/* 
+   Focus Button Classes
+   ========================================================================== */
+/*Specifies the background for buttons in the focus state.*/
+af|panelTabbed {
+  z-index: 1; }
+
+af|button {
+  z-index: 1; }

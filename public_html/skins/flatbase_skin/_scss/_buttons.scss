@@ -1,0 +1,265 @@
+
+/* ==========================================================================
+    BUTTONS    
+    ========================================================================== */
+ 
+ 
+/* 
+     Base Buttons Vars
+     ========================================================================== */
+  
+/* The start gradient color for a button.  Only used by skyros skins. */
+
+
+
+.AFButtonGradientStartColor:alias{
+  color:-tr-property-ref(".FLTGrassColor1:alias","color");
+}
+
+/* The end gradient color for a button.  Only used by skyros skins. */
+.AFButtonGradientEndColor:alias{
+    color:-tr-property-ref(".FLTGrassColor1:alias","color");
+
+}
+
+/* Left, top, and right border color for a button. Only used by skyros skins. */
+.AFButtonBorderColor:alias{
+    color:-tr-property-ref(".FLTGrassColor1:alias","color");
+}
+  
+/* Bottom border color for a button. Only used by skyros skins. */
+.AFButtonBorderBottomColor:alias{    
+  color:-tr-property-ref(".FLTGrassColor1:alias","color");
+}
+
+/*Specifies the access key style for af|Button, af|commandButton, af|goButton, af|resetButton.*/
+.AFButtonAccessKeyStyle:alias {}
+
+/*Specifies the background for buttons that include this style alias,*/
+/*like af|button, af|commandButton, af|goButton, af|resetButton, af|trainButtonBar. Skinning the .AFButton* aliase*/
+/*s is meant to be a short-cut for the skin developer and it can help ensure that all buttons are skinned the same since all button components include these aliase*/
+/*s in the base skin. Please note that for buttons :active and :focus pseudo-classes do not work in IE7. IE7 also does not allow disabled buttons to be styled.*/
+
+.AFButtonBackground:alias {}
+
+/*Specifies the foreground for buttons.*/
+.AFButtonForeground:alias {
+  color:white;
+}
+
+/*Specifies the border for buttons that include this style alias,*/
+/*like af|button, af|commandButton, af|goButton, af|resetButton.*/
+
+.AFButtonBorder:alias {}
+  
+
+
+/* 
+     Disabled Buttons Vars
+     ========================================================================== */
+  
+/* Start color for disabled button gradient background.  Only used by skyros skins. */
+.AFButtonGradientStartDisabledColor:alias{
+      color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+  
+/* End color for button gradient background during hover.  Only used by skyros skins. */
+.AFButtonGradientEndDisabledColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+
+/* Color used for disabled button borders. It is slightly deeper than the disabled button background gradient start. Only used by skyros skins. */
+.AFButtonBorderDisabledColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+
+/*Specifies the background for buttons in the disabled state.*/
+.AFButtonBackgroundDisabled:alias {}
+/*Specifies the border for buttons in the disabled state.*/
+.AFButtonBorderDisabled:alias {}
+
+/*Specifies the foreground for buttons in the disabled state.*/
+.AFButtonForegroundDisabled:alias {
+          color:-tr-property-ref(".FLTLightGrayColor1:alias","color");
+
+}    
+
+/* 
+   Hover Buttons Vars
+   ========================================================================== */
+
+/*Start color for button gradient background during hover.  Only used by skyros skins.*/
+.AFButtonGradientStartHoverColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+/*End color for disabled button gradient background.  Only used by skyros skins.*/
+
+.AFButtonGradientEndHoverColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+
+
+/*Top, left, and right border color for button during hover.  Only used by skyros skins.*/
+.AFButtonBorderHoverColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+
+/*Bottom border color for button during hover.  Only used by skyros skins.*/
+.AFButtonBorderBottomHoverColor:alias{
+        color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+
+/*Specifies the background for buttons in the hover state (mouse over).*/
+.AFButtonBackgroundHover:alias  {}
+/*Specifies the foreground for buttons in the hover state.*/
+.AFButtonForegroundHover:alias  {
+  color:white;
+}
+/*Specifies the border for buttons in the hover state.*/
+.AFButtonBorderHover:alias  {}
+
+/* 
+   Active Buttons Vars
+   ========================================================================== */
+
+
+
+/*Start gradient background color for button in active state. Only used by skyros skins.*/
+.AFButtonGradientStartActiveColor:alias{
+      color:-tr-property-ref(".FLTGrassColor2:alias","color");
+
+}
+
+/*End gradient background color for a button in active state. Only used by skyros skins.*/
+.AFButtonGradientEndActiveColor:alias{
+      color:-tr-property-ref(".FLTGrassColor2:alias","color");
+
+}
+
+/*Left, top, and right border color for an active button. Only used by skyros skins.*/
+.AFButtonBorderActiveColor:alias{
+      color:-tr-property-ref(".FLTGrassColor2:alias","color");
+
+}
+
+/*Top border color for button in active state.  Only used by skyros skins.*/
+.AFButtonBorderTopActiveColor:alias{
+        color:-tr-property-ref(".FLTGrassColor2:alias","color");
+}
+
+/*Specifies the background for buttons in the active state (mouse down).*/
+.AFButtonBackgroundActive:alias {}
+
+/*Specifies the border for buttons in the active state.*/
+.AFButtonBorderActive:alias {}
+
+/*Specifies the foreground for buttons in the depressed state.*/
+.AFButtonForegroundDepressed:alias  {
+  color:white;
+}
+
+
+/* 
+   Focus Button Classes
+   ========================================================================== */
+/*Specifies the background for buttons in the focus state.*/
+.AFButtonBackgroundFocus:alias  {
+
+}
+
+
+
+/* 
+   base button classes
+   ========================================================================== */
+
+
+
+
+/* Style on the root element of the af:button component. This style includes the .AFDefaultFont:alias style. Tip: You may also want to skin it for :hover. It is recommended that you use the .AFButton*:alias selectors as a shortcut to skin all button components the same.*/
+
+/**
+ *
+ * Pseudo classes  Description
+* depressed  
+* selected   
+* disabled   
+* text-only Styles when there is no icon.
+* twinkle-on   
+* action-disabled Styles when actionDelivery="none"
+* leading Styles when the icon position is leading
+* trailing  Styles when the icon position is trailing
+* top Styles when the icon position is top
+* bottom  Styles when the icon position is bottom
+*/
+af|button{
+  padding:6px 10px;
+  @include default_border_radius();
+  &::text{
+    font-weight:700;
+  }
+  // @include button($FLTGrassColor1);
+}
+.AFButtonNative:alias {
+  font-weight:700;
+  padding:6px 10px;
+  @include default_border_radius();
+}
+
+
+// af|commandButton {
+//   font-weight:700;
+//   padding:6px 10px;
+//   @include default_border_radius();
+//   border:1px solid red;
+// }
+
+
+
+
+
+af|button::depressed{
+  // @include button($FLTGrassColor2);
+}
+
+af|button::disabled{
+  // @include button($FLTMediumGrayColor2);
+}
+
+
+
+
+ /* Style on the button link on the af:button component.*/
+
+af|button::link {}
+
+
+/* Style on the button text on the af:button component.*/
+
+
+/* Style on the access key for the label of the af:button component. For example, underline the access key. Includes .AFButtonAccessKeyStyle:alias.*/
+af|button::access-key {}
+/* Style on the cell containing the dropdown icon used for the popup button of the af:button component.*/
+af|button::dropdown-cell  {}
+/* Style of the icon used for the popup button of the af:button component. The icon is specified as a background-image in this key. To override the default icon, set -tr-inhibit: background-image in the dropdown-icon-style and define the override icon for the dropdown-icon.*/
+af|button::dropdown-icon-style  {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

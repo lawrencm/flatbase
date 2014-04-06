@@ -1,0 +1,13 @@
+
+@mixin default_border_radius() {
+  @include border-top-radius(4px);
+  @include border-bottom-radius(4px);
+  @include border-left-radius(4px);
+  @include border-right-radius(4px);
+}
+
+
+@mixin default_border(){
+	border:1px solid $FLTdBorderColor;
+	@include default_border_radius();
+}

@@ -1,0 +1,201 @@
+/* ==========================================================================
+   PANELS
+   ========================================================================== */
+
+/* 
+   base pane vars
+   ========================================================================== */
+
+/*Border color used in many of our panel components such as panelBox, panelHeader etc.  Only used by skyros skins.*/
+.AFPanelBorderColor:alias{
+	color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+/*Second panel border color used acro components such as Table and Calendar. See also AFPanelBorderColor  Only used by skyros skins.*/
+.AFPanelBorder2Color:alias{}
+/*PanelBox highlight medium color.  Only used by skyros skins.*/
+.AFPanelBoxHighlightMediumColor:alias{
+}
+/*PanelBox highlight light color. Only used by skyros skins.*/
+.AFPanelBoxHighlightLightColor:alias{
+}
+/*PanelBox highlight dark color.  Only used by skyros skins.*/
+.AFPanelBoxHighlightDarkColor:alias{
+}
+/*PanelBox core dark color. Only used by skyros skins.*/
+.AFPanelBoxCoreDarkColor:alias{
+}
+
+
+
+
+
+
+
+// Alias for the style for the start corner in the header of the panel box and region. Usually the curve image.
+.AFPanelBoxHeaderStartDefault:alias	{}
+
+// Alias for the style for the end corner in the header of the panel box and region. Usually the curved image.
+.AFPanelBoxHeaderEndDefault:alias	{
+	color:red;
+}
+
+// Alias for the style for the center area in the header of the panel box and region.
+.AFPanelBoxHeaderCenterDefault:alias	{}
+
+// Alias for the style for the start corner in the footer of the panel box and region. Usually the curved image.
+.AFPanelBoxFooterStartDefault:alias	{}
+
+// Alias for the style for the end corner in the footer of the panel box and region. Usually the curve image.
+.AFPanelBoxFooterEndDefault:alias	{}
+
+// Alias for the style for the center area in the footer of the panel box and region.
+.AFPanelBoxFooterCenterDefault:alias	{}
+
+// Alias for the style for the content area of the panel box and region.
+.AFPanelBoxContentCenterDefault:alias	{}
+
+// Alias to change the properties on the panelBox header for the panelBox whose "ramp" is set to "core" and "color" is set to "default". Using this style class significantly simplifies the work required to style the header. Instead of changing three classes (for header-start, header, header-end) you only need to change this one. The region component uses this alias as well.
+.AFPanelBoxHeaderCoreDefault:alias	{}
+
+// Alias to change the properties on the panelBox content for the panelBox whose "ramp" is set to "core" and "color" is set to "default". The region component uses this alias as well.
+.AFPanelBoxContentCoreDefault:alias	{}
+
+// Same as .AFPanelBoxHeaderCoreDefault:alias, but for color=light.
+.AFPanelBoxHeaderCoreLight:alias	{}
+
+// Same as .AFPanelBoxContentCoreDefault:alias, but for color=light.
+.AFPanelBoxContentCoreLight:alias	{}
+
+// Same as .AFPanelBoxHeaderCoreDefault:alias, but for color=medium.
+.AFPanelBoxHeaderCoreMedium:alias	{}
+
+// Same as .AFPanelBoxContentCoreDefault:alias, but for color=medium.
+.AFPanelBoxContentCoreMedium:alias	{}
+
+// Same as .AFPanelBoxHeaderCoreDefault:alias, but for color=dark.
+.AFPanelBoxHeaderCoreDark:alias	{}
+
+// Same as .AFPanelBoxContentCoreDefault:alias, but for color=dark.
+.AFPanelBoxContentCoreDark:alias	{}
+
+// Alias to change the properties on the panelBox header for the panelBox whose "ramp" is set to "highlight" and "color" is set to "default". Using this style class significantly simplifies the work required to style the header. Instead of changing three classes (for header-start, header, header-end) you only need to change this one. The region component uses this alias as well.
+.AFPanelBoxHeaderHighlightDefault:alias	{}
+
+// Alias to change the properties on the panelBox content for the panelBox whose "ramp" is set to "highlight" and "color" is set to "default". The region component uses this alias as well.
+.AFPanelBoxContentHighlightDefault:alias	{}
+
+// Same as .AFPanelBoxHeaderHighlightDefault:alias, but for color=light.
+.AFPanelBoxHeaderHighlightLight:alias	{}
+
+// Same as .AFPanelBoxContentHighlightDefault:alias, but for color=light.
+.AFPanelBoxContentHighlightLight:alias	{}
+
+// Same as .AFPanelBoxHeaderHighlightDefault:alias, but for color=medium.
+.AFPanelBoxHeaderHighlightMedium:alias	{}
+
+// Same as .AFPanelBoxContentHighlightDefault:alias, but for color=medium.
+.AFPanelBoxContentHighlightMedium:alias	{}
+
+// Same as .AFPanelBoxHeaderHighlightDefault:alias, but for color=dark.
+.AFPanelBoxHeaderHighlightDark:alias	{}
+
+// Same as .AFPanelBoxContentHighlightDefault:alias, but for color=dark.
+.AFPanelBoxContentHighlightDark:alias	{}
+
+// Alias to change the dom element at the start of the header. Use this alias to modify the CSS properties that are needed for all ramp/background of panelBoxes. Common CSS properties are padding and border.
+.AFPanelBoxHeaderStart:alias	{}
+
+// Alias to change the dom element at the center of the header. Use this alias to modify the CSS properties that are needed for all ramp/background of panelBoxes. Common CSS properties for the header center dom element are width and font information.
+.AFPanelBoxHeaderCenter:alias	{
+}
+
+// Alias to change the dom element at the end of the header. Use this alias to modify the CSS properties that are needed for all ramp/background of panelBoxes. Common CSS properties are padding and border.
+.AFPanelBoxHeaderEnd:alias	{}
+
+
+
+
+/* 
+   Panel Header vars
+   ========================================================================== */
+
+
+// Specifies style for the start corner of the title area in a level 1 panel header. Usually the curved image.
+.AFPanelHeaderTitleStartLevel1:alias{}
+
+// Specifies style for the center of the title area in a level 1 panel header.
+.AFPanelHeaderTitleCenterLevel1:alias{}
+
+// Specifies style for the end corner of the title area in a level 1 panel header. Usually just the curved image.
+.AFPanelHeaderTitleEndLevel1:alias{}
+
+// Specifies style for the start corner of the title area in a panel header that is not at the first level. Usually the curved image.
+.AFPanelHeaderTitleStartSubLevels:alias{}
+
+// Specifies style for the center of the title area in a panel header that is not at the first level.
+.AFPanelHeaderTitleCenterSubLevels:alias{}
+
+// Specifies style for the end corner of the title area in a panel header that is not at the first level. Usually the curved image.
+.AFPanelHeaderTitleEndSubLevels:alias{}
+
+// Specifies style for the content area of the panel header at the first level.
+.AFPanelHeaderContentLevel1:alias{}
+
+
+
+
+
+
+
+af|panelWindow,
+af|dialog{
+	&::header-start,
+	&::header-end,
+	&::header{
+		background-color:$FLTMediumGrayColor2;
+  		height: 45px;
+	}
+	&::header-start,
+	&::header-end{
+		width: 3px;
+	}
+	&::title{
+		color:white;		
+	}
+	&::close-icon-region{
+		margin-right:10px;
+	}
+	&::icon-region{
+		margin-left:6px;
+		margin-right:10px;
+	}
+}
+
+
+
+// af|panelWindow::close-icon-style,
+// af|dialog::close-icon-style {
+//   background-position: top;
+//   background-image: url("/afr/skyros-v1/close_ena.png");
+//   background-repeat: no-repeat;
+//   margin-top: 0px;
+//   padding: 0px;
+//   width: 13px;
+//   height: 13px;
+// }
+
+
+
+
+
+// af|panelWindow{
+// 	&::header,
+// 	&::header-start,
+// 	&::header-end {
+// 		background:$FLTL;
+
+// 	}
+// }
+
+
+

@@ -1,0 +1,156 @@
+/* ==========================================================================
+   TABS
+   ========================================================================== */
+
+/* 
+   TAB VARS
+   ========================================================================== */
+$tabHeight: 40px;
+$iconHeight: 13px;
+
+/* 
+   TAB ADF VARS
+   ========================================================================== */
+
+/*Default background color of tabs in PanelTabbed and NavigationPane (hint=tabs). Only used by skyros skins.*/
+.AFTabColor:alias {
+    color: $FLTLightGrayColor2;
+}
+
+/*Disabled tab border color.  Only used by skyros skins.*/
+.AFTabBorderDisabledColor:alias {}
+
+/*Default tab border color. Only used by skyros skins.*/
+.AFTabBorderColor:alias {
+    color: $FLTMediumGrayColor2;
+}
+
+/*Disabled Tab background color.  Only used by skyros skins.*/
+.AFTabDisabledColor:alias {}
+
+//color: $FLTDarkGrayColor2
+
+/* tab icon styles */
+
+af|panelTabbed::icon-style,
+af|navigationPane-tabs::icon-style,
+af|panelTabbed::remove-icon-style,
+af|navigationPane-tabs::remove-icon-style {
+    padding-top: 0px;
+    // vertical-align: middle;
+    // background:pink;
+    // border:1px solid red;
+}
+
+af|panelTabbed,
+af|navigationPaneTabs {
+    -tr-tab-bar-height: $tabHeight;
+    // Style on the access-key for the label. Includes .AFFormAccessKeyStyle:alias.
+    &::access-key {}
+    // Selector for the top left (top right for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the header.
+    &::header-start {}
+    // Style on the header of the panelTabbed component. This is the container for the "above" tabs. When tabs are in the header, the height of this header will come from the height specified in the "-tr-tab-bar-height" property. Otherwise, the height from the property "-tr-height" defined in this selector is used (for a header-specific empty bar height) or if not defined, a generic height from the "-tr-empty-bar-height" property is used.
+    &::header {}
+    // Selector for the top right (top left for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the header.
+    &::header-end {}
+    // Selector for the left side (right side for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the body.
+    &::body-start {}
+    // Style on the body of the panelTabbed component. This is the area between the header and footer bars.
+    &::body {}
+    // Selector for the right side (left side for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the body.
+    &::body-end {}
+    // Selector for the bottom left (bottom right for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the footer.
+    &::footer-start {}
+    // Style on the footer of the panelTabbed component. This is the container for the "below" tabs. When tabs are in the footer, the height of this footer will come from the height specified in the "-tr-tab-bar-height" property noted below. Otherwise, the height from the property "-tr-height" defined in this selector is used (for a footer-specific empty bar height) or if not defined, a generic height from the "-tr-empty-bar-height" property noted below is used.
+    &::footer {}
+    // Selector for the bottom right (bottom left for RTL). The property "-tr-width" is supported to specify the width. The height is taken from the height of the footer.
+    &::footer-end {}
+    // Style on the tabs in the panelTabbed component. This applies to tabs in both the header and the footer.
+    &::tab {
+        height: $tabHeight;
+        line-height: $tabHeight;
+        //     border: 1px solid red;
+
+        // &:selected {
+        //     color: red;
+        //     border: 1px solid red;
+        //     line-height: $tabHeight;
+        //     height: $tabHeight;
+        //     &::tab-content,
+        //     &::tab-text-link {
+        //         // padding: $tabHeight/4 5px $tabHeight/4 7px;
+        //         // border-top-left-radius: 3px;
+        //         // border-top-right-radius: 3px;
+        //         		height: $tabHeight;
+
+        //         line-height: $tabHeight - 5;
+        //         // margin-top: 0px;
+           
+        //     }
+        // }
+    }
+    // p_AFSelected
+    // Style on the middle of the tabs used with the panelTabbed component. This applies to tabs in both the header and the footer. To provide an alternate skinning of the tabs, you will want to specify alternate background images to the ::tab-start, ::tab-end, and ::tab-content. You will also probably want to specify separate changes for the ::header and the ::footer, and you may want to specify alternate styling for :disabled and :selected states as well. Styling with a border is not supported (doing this will result in browser compatibility issues based on em sizing). See the definition for ::tab-start for a full example.
+    &::tab-content {
+        // padding: $tabHeight/4 5px $tabHeight/4 7px;
+        // border-top-left-radius: 3px;
+        // border-top-right-radius: 3px;
+        line-height: $tabHeight - 5;
+		height: $tabHeight;
+
+        // margin-top: 0px;
+   
+    }
+    // Style on the anchor (link) part of the tabs used with the panelTabbed component. This applies to tabs in both the header and the footer. Disabled tabs do not have a tab-text-link selector.
+    &::tab-text-link {
+	    // display:inline-block;
+    	// // padding:10px 4px 10px 7px;
+    	// height: $tabHeight;
+        line-height: $tabHeight;
+        font-weight: 700;
+     //    border:1px solid blue;
+        &:selected{
+        	line-height: $tabHeight;
+        }
+    }
+
+    &:top-tabs{
+	    &::icon-style {
+	        margin-top: ($tabHeight - 5 - $iconHeight) / 2;
+	    }
+
+    }
+
+    // Style on the icons (if present) in the tabs used with the panelTabbed component. This applies to tabs in both the header and the footer.
+    &::icon-style {
+        // margin-top: ($tabHeight - 5 - $iconHeight) / 2;
+    }
+    // Style on the start overflow indicator that is present when the toolbar tabs have compressed layout mode of overflow. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::start-overflow-indicator {}
+    // Style on the end overflow indicator that is present when the toolbar tabs have compressed layout mode of overflow. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::end-overflow-indicator {}
+    // Style on the start conveyor belt indicator that is present when the toolbar tabs have compressed layout mode of conveyor belt. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::start-conveyor-belt-indicator {}
+    // Style on the end conveyor belt indicator that is present when the toolbar tabs have compressed layout mode of conveyor belt. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::end-conveyor-belt-indicator {}
+    // Style on the droplist indicator that is present when the toolbar tabs have compressed layout mode of conveyor belt or overflow droplist. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::droplist-indicator {}
+    // If tab removal is enabled, this is the style of the remove icon used on a disclosed tab item. The icon is specified as a background-image in this key. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::disclosed-remove-icon-style {}
+    // If tab removal is enabled, this is the style of the remove icon used on an undisclosed tab item. The icon is specified as a background-image in this key. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::undisclosed-remove-icon-style {}
+    // If tab removal is enabled, this is the style of the disabled remove icon used on a disclosed tab item that is set to remove disabled. The icon is specified as a background-image in this key.
+    &::disclosed-remove-disabled-icon-style {}
+    // If tab removal is enabled, this is the style of the disabled remove icon used on an undisclosed tab item that is set to remove disabled. The icon is specified as a background-image in this key.
+    &::undisclosed-remove-disabled-icon-style {}
+    // Overrides the default start overflow icon. Icons can be text or img elements, e.g. &::start-overflow-icon {content "X"} or &::start-overflow-icon {content: url(...)}. Use this key instead of the start-overflow-indicator key if you do not want a background-image.
+    &::start-overflow-icon {}
+    // Overrides the default end overflow icon. Icons can be text or img elements, e.g. &:::end-overflow-icon {content "X"} or &:::end-overflow-icon {content: url(...)}. Use this key instead of the end-overflow-indicator key if you do not want a background-image.
+    &::end-overflow-icon {}
+    // If tab removal is enabled, this overrides the default remove icon on a disclosed tab item. Icons can be text or img elements, e.g. &::disclosed-remove-icon {content "X"} or &::disclosed-remove-icon {content: url(...)}. Use this key instead of the disclosed-remove-icon-style key if you do not want a background-image.
+    &::disclosed-remove-icon {}
+    // If tab removal is enabled, this overrides the default remove icon on an undisclosed tab item. Icons can be text or img elements, e.g. &::undisclosed-remove-icon {content "X"} or &::undisclosed-remove-icon {content: url(...)}. Use this key instead of the undisclosed-remove-icon-style key if you do not want a background-image.
+    &::undisclosed-remove-icon {}
+    // If tab removal is enabled, this overrides the default disabled remove icon on an tab item that is set to remove disabled. Icons can be text or img elements, e.g. &::remove-disabled-icon {content "X"} or &::remove-disabled-icon {content: url(...)}. Use this key instead of the disclosed-remove-disabled-icon-style and undisclosed-remove-disabled-icon-style keys if you do not want a background-image.
+    &::remove-disabled-icon {}
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   MENUS
+   ========================================================================== */
+
+
+// Style class that applies to menu items. Valid menu items are either commandMenuItems, goMenuItems, or submenus (menus in menus).
+.AFMenuItem:alias{}
+
+// Style class that applies to menu items. Valid menu items are either commandMenuItems, goMenuItems, or submenus (menus in menus). The default foreground color for menu items. By default, this value is set to the .AFTextForeground:alias color.	Only used by fusion skins.
+.AFMenuTextForeground:alias{}
+
+// Style class that applies to disabled menu items. Valid menu items are either commandMenuItems, goMenuItems, or submenus (menus in menus).
+.AFMenuItemDisabled:alias{}
+
+
+
+// af|commandMenuItem::bar-item,
+// af|goMenuItem::bar-item,
+// af|menu::bar-item {
+//   // height: 28px;
+//   @include default_border_radius();
+
+// }
+
+
+// /* menu bar item text (menu has drop down indicator) */
+// af|menu::bar-item-text {
+//   color: -tr-property-ref(".AFTextPrimaryColor:alias","color");
+//   // padding: 5px 0px 5px 5px;
+// }
+
+/* menu bar item text */
+// af|commandMenuItem::bar-item-text,
+// af|goMenuItem::bar-item-text {
+//   padding: 5px;
+// }

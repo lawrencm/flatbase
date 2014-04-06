@@ -1,0 +1,15 @@
+/*Color used in many of our data view and container components for the background of their content areas. For example, the content body background of the PanelAccordion or the background of cells in a table. By default, this is the same color as the AFBackgroundColor.  Only used by skyros skins.*/
+.AFComponentBackgroundColor:alias{
+    color:white;
+}
+
+/*A secondary color used in some of our data view and container components. This is slightly stronger color than the AFComponentBackgroundColor to provide contrast. For example, the background of the banded data cells of the background color of a modal dialog.  Only used by skyros skins.*/
+.AFComponentBackground2Color:alias{
+	color:$FLTLightGrayColor2;
+}
+
+
+/*Window barder color.  Only used by skyros skins.*/
+.AFWindowBorderColor:alias{
+	color:$FLTMediumGrayColor2;
+}

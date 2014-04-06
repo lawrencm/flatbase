@@ -1,0 +1,150 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+/* 
+   VARS
+   ========================================================================== */
+
+/*Color used for form control labels. It is slightly lighter than the default font color. Only used by skyros skins.*/
+.AFLabelColor:alias{
+	color:-tr-property-ref(".FLTDarkGrayColor2:alias","color");
+}
+
+
+/*Border color for form control content.  Only used by skyros skins.*/
+.AFFormControlContentBorderColor:alias{
+	color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+}
+/*Background color for form control content.  Only used by skyros skins.*/
+.AFFormControlContentColor:alias{
+		color:white;
+}
+/*Disabled form control content background color. Only used by skyros skins.*/
+.AFFormControlContentDisabledColor:alias{
+	color:-tr-property-ref(".FLTLightGrayColor1:alias","color");
+
+}
+/*Disabled form control content border color. Only used by skyros skins.*/
+.AFFormControlContentBorderDisabledColor:alias{
+	color:-tr-property-ref(".FLTLightGrayColor2:alias","color");
+}
+
+
+
+
+
+
+// Aliased style class that is included in the label selector for all the form components. e.g. "af|inputText::label". Uses .AFDefaultFont:alias, .AFEndTextAlign:alias, .AFEndPadding:alias, .AFLabelTextForeground:alias,
+.AFLabel:alias{
+	font-weight:700;
+}
+
+// Aliased style class that is included in the label selector for all the form components when they are disabled. It is a quick way to style disabled form components' labels the same, instead of for each component: .AFLabelDisabled:alias instead of e.g. "af|inputText:disabled::label".
+.AFLabelDisabled:alias{}
+
+// Colors the label. Use the CSS property "color" to style the color of the label. This is used in the .AFLabel:alias style which styles the label for all form components, like af:inputText and af:selectOne/selectMany components.	Only used by fusion skins.
+.AFLabelTextForeground:alias{}
+
+// Use the property "color" to style the color of the label when it is disabled. This is used in the .AFLabelDisabled:alias style which styles the label for all form components (like af:inputText and af:selectOne/selectMany) when they are disabled.	Only used by fusion skins.
+.AFLabelTextForegroundDisabled:alias{}
+
+// Style the access key (like underline or bold) for form components. Affects output labels, input, panelLabelAndMessage, af:select* components.
+.AFFormAccessKeyStyle:alias{}
+
+// Style the background of form control content like af|inputText::content.
+.AFFormControlContentBackground:alias{
+}
+
+// Style the background of form control content for the disabled state like af|inputText:disabled::content.
+.AFFormControlContentBackgroundDisabled:alias{}
+
+// Style the foreground of form control content for the disabled state like af|selectBooleanRadio:disabled::content.
+.AFFormControlContentForegroundDisabled:alias{}
+
+// Style the border of form control content like af|inputText::content.
+.AFFormControlContentBorder:alias{}
+
+
+// The border around a form component to indicate something fatal occurred.
+.AFFormComponentOutlineFatal:alias{}
+// The border around a form component to indicate an error.
+.AFFormComponentOutlineError:alias{}
+// The border around a form component to indicate a warning.
+.AFFormComponentOutlineWarning:alias{}
+// Background color to indicate something fatal occurred; used on checkboxes and radio boxes. Used in simple skin on all browsers, or for fusion skin in IE7.
+.AFFatalBackground:alias{}
+// Background color to indicate an error; used on checkboxes and radio boxes. Used in simple skin on all browsers, or for fusion skin in IE7.
+.AFErrorBackground:alias{}
+// Background color to indicate a warning; used on checkboxes and radio boxes. Used in simple skin on all browsers, or for fusion skin in IE7.
+.AFWarningBackground:alias{}
+
+
+
+
+af|inputText::content {
+  padding: 6px 6px;
+  margin: 5px 2px;
+  font-size: 14px;
+  min-width:170px;
+  background-color: -tr-property-ref(".AFFormControlContentColor:alias","color"); 
+  @include default_border();
+}
+
+
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFInstructionText{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFInstructionTextDisabled{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldText{
+
+}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldTextDisabled{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldTextLTR{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldTextLTRDisabled{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFPhoneFieldText{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFPhoneFieldTextDisabled{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFPostalCodeFieldText{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFPostalCodeFieldTextDisabled{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFAddressFieldText{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFAddressFieldTextDisabled{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFDataText{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFDataTextDisabled{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFDataNumber{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFDataNumberDisabled{} 
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldNumber{}  
+
+/*Built-in style that can be used as a styleClass attribute value. To style input components, you would use the style classes that end in 'Marker'. See skinning doc for af:inputText for details.*/
+.AFFieldNumberDisabled{}  

@@ -1,0 +1,20 @@
+
+@mixin base-icon{
+	font-family:"GLYPHICONS Halflings", "glyphicons_halflingsregular";
+	color:red;
+}
+
+@mixin warning-icon(){
+	@include base-icon();
+	// content: url("images/glyphicons/png/glyphicons_078_warning_sign.png"); 	
+	content:"\e107"
+}
+
+
+// af|panelHeader{
+// 	&::warning-icon{
+// 		@include warning-icon();	
+// 	}	
+// }
+
+

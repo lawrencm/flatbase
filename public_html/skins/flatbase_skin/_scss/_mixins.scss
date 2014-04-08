@@ -8,6 +8,6 @@
 
 
 @mixin default_border(){
-	border:1px solid $FLTdBorderColor;
+	border:1px solid $FLTLightGrayColor2;
 	@include default_border_radius();
 }

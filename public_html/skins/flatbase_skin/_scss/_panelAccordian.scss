@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Panel Accordian
+   ========================================================================== */
+
+
+// $accordionHeaderBackgroundColor:$FLTLightGrayColor1;
+$accordionHeaderBackgroundColor:$FLTLightGrayColor1;
+$accordionHeaderFontColor:$FLTDarkGrayColor1;
+$accordionHeaderBorderColor:$FLTLightGrayColor2;
+
+
+
+/*Accordion header start gradient background color. Only used by skyros skins.*/
+.AFAccordionHeaderGradientStartColor:alias {
+    color:$accordionHeaderBackgroundColor;
+}
+
+/*Accordion border color. Only used by skyros skins.*/
+.AFAccordionBorderColor:alias {
+    color: $accordionHeaderBorderColor;
+}
+
+/*Accordion header end gradient background color. Only used by skyros skins.*/
+.AFAccordionHeaderGradientEndColor:alias {
+	color:$accordionHeaderBackgroundColor;
+}
+
+// Used by the fusion skins to skin the background image of the panelAccordion header
+.AFPanelAccordionHeaderBackground:alias {
+    color: red;
+}
+
+// Used by the fusion skins to skin the background image of the panelAccordion disclosed header
+.AFPanelAccordionHeaderDisclosedBackground:alias {}
+
+// Used by the fusion skins to skin multiple background-images in the af|panelAccordion::body-content pseudo-element when the browser supports multiple background images. This is unused in older browsers that do not support multiple background-images.
+.AFPanelAccordionBodyMultipleBackgroundImage:alias {}
+
+/* 
+   Base classes
+   ========================================================================== */
+
+af|panelAccordion {
+    -tr-header-height: $panelTRHeaderHeight;
+    @include default_border();
+    // Style on the access-key for the label. Includes .AFFormAccessKeyStyle:alias.
+    &::access-key {}
+    // Style of the drop target of the panel accordion that is shown while reordering panels with the mouse.
+    &::drop-target {}
+    // Style on the parent element of the header and content elements that are being dragged during item reordering using the mouse.
+    &::ghost {}
+    // Style on the various headers included in the panelAccordion component.
+    &::header,
+    &::header-subsequent{
+	    -tr-inhibit: background-image; 	
+        -tr-inhibit: background; 
+        // background-image: none;
+        // background: none;
+        border-top:none;
+		border-left:none;        
+		border-right:none;
+        background-color: $accordionHeaderBackgroundColor;
+
+    }
+    // Style on the subsequent headers (all except the first) included in the panelAccordion component.
+    &::header-subsequent {}
+    // Style on the part of the header that contains the disclose/undisclose button.
+    &::header-disclose {}
+    // Style on the icon that is shown when the panel is undisclosed (collapsed). The icon is specified as a background-image in this key. To use text or an img element instead of a background-image, set -tr-inhibit: background-image in the undisclosed-icon-style and define the icon for the undisclosed-icon key.
+    &::undisclosed-icon-style {}
+    // Style on the icon that is shown when the panel is disclosed (expanded). The icon is specified as a background-image in this key. To use text or an img element instead of a background-image, set -tr-inhibit: background-image in the disclosed-icon-style and define the icon for the disclosed-icon key.
+    &::disclosed-icon-style {}
+    // Style on the image that corresponds to the showDetailItem icon in the header.
+    &::icon-style {}
+    // Style on the title element in the header.
+    &::header-title {
+        line-height: $panelHeaderHeight;
+        color: $accordionHeaderFontColor;
+    }
+    // Style on the container for the header toolbar.
+    &::header-toolbar {}
+    // Style on the container for the header toolbar.
+    &::header-toolbar {}
+    // Style on the body root element for disclosed showDetailItems in the panelAccordion. For example you could change the background-color or the border.
+    &::body-content {
+    	border:none;
+    	
+    	af|panelGroupLayout{
+    		padding:10px 0px;	
+		     line-height:18px;
+    	}
+    }
+    // Style on the top overflow indicator that is present when the accordion showDetailItems are overflowed beyond the top of the panelAccordion. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::top-overflow-indicator {}
+    // Style on the bottom overflow indicator that is present when the accordion showDetailItems are overflowed beyond the bottom of the panelAccordion. Tip: If you skin the background-image, you may also want to skin it for :hover and :active.
+    &::bottom-overflow-indicator {}
+    // Styles the vertical resize divider for each disclosed detail item. The height, cursor and background color of the resize divider bar can be changed using this style.
+    &::resize-divider {}
+    // Overrides the default undisclosed icon. Icons can be text or img elements, e.g. af|panelAccordion::undisclosed-icon {content "X"} or af|panelAccordion::undisclosed-icon {content: url(...)}. Use this key instead of the undisclosed-icon-style key if you do not want a background-image.
+    &::undisclosed-icon {}
+    // Overrides the default disclosed icon. Icons can be text or img elements, e.g. af|panelAccordion::disclosed-icon {content "X"} or af|panelAccordion::disclosed-icon {content: url(...)}. Use this key instead of the disclosed-icon-style key if you do not want a background-image.
+    &::disclosed-icon {}
+    // Overrides the default top overflow icon. Icons can be text or img elements, e.g. af|panelAccordion::overflow-top-icon {content "X"} or af|panelAccordion::overflow-top-icon {content: url(...)}. Use this key instead of the top-overflow-indicator key if you do not want a background-image.
+    &::overflow-top-icon {}
+    // Overrides the default bottom overflow icon. Icons can be text or img elements, e.g. af|panelAccordion::overflow-bottom-icon {content "X"} or af|panelAccordion::overflow-bottom-icon {content: url(...)}. Use this key instead of the bottom-overflow-indicator key if you do not want a background-image.
+    &::overflow-bottom-icon {}
+}

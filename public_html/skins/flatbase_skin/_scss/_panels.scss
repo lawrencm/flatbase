@@ -5,10 +5,17 @@
 /* 
    base pane vars
    ========================================================================== */
+$panelHeaderBackgroundColor:$FLTMediumGrayColor2;
+$panelHeaderForegroundColor:white;
+$panelTRHeaderHeight: 45;
+$panelHeaderHeight: $panelTRHeaderHeight + px;
+$panelBorderColor:$FLTMediumGrayColor2;
+
+
 
 /*Border color used in many of our panel components such as panelBox, panelHeader etc.  Only used by skyros skins.*/
 .AFPanelBorderColor:alias{
-	color:-tr-property-ref(".FLTMediumGrayColor2:alias","color");
+	color:$panelBorderColor;
 }
 /*Second panel border color used acro components such as Table and Calendar. See also AFPanelBorderColor  Only used by skyros skins.*/
 .AFPanelBorder2Color:alias{}
@@ -153,7 +160,7 @@ af|dialog{
 	&::header-end,
 	&::header{
 		background-color:$FLTMediumGrayColor2;
-  		height: 45px;
+  		height: $panelHeaderHeight;
 	}
 	&::header-start,
 	&::header-end{

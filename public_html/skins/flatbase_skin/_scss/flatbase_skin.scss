@@ -249,10 +249,7 @@ Colors that are not classified as either Anchor, Derivative, or Specialty colors
 
 }
 
-/*Accordion header start gradient background color. Only used by skyros skins.*/
-.AFAccordionHeaderGradientStartColor:alias{
 
-}
 /*Color used to indicate a selected state. For example, background color for the selected node in a tree or background of selected choice in a dropdown.  Only used by skyros skins.*/
 .AFSelectedColor:alias{
 
@@ -339,8 +336,7 @@ Selector Name Description Conditions*/
 /*Background top border color.  Only used by skyros skins.*/
 .AFBackgroundBorderTopColor:alias{}
 
-/*Accordion border color. Only used by skyros skins.*/
-.AFAccordionBorderColor:alias{}
+
 
 /*Background left, top, and right border color. Only used by skyros skins.*/
 .AFBackground2BorderColor:alias{}
@@ -369,8 +365,7 @@ Selector Name Description Conditions*/
 /*Tab border color in global area.  Only used by skyros skins.*/
 .AFGlobalTabBorderColor:alias{}
 
-/*Accordion header end gradient background color. Only used by skyros skins.*/
-.AFAccordionHeaderGradientEndColor:alias{}
+
 
 
 
@@ -521,6 +516,34 @@ Infrequently used specialty color alias
 
 /*Specifies the color of the font for text. Only used by fusion skins.*/
 
+.AFBackground2Color:alias {
+    color: #F1F2F6; 
+}
+
+.AFGaugeMetricBorderColor:alias {
+    color: #C6C7CA; 
+}
+
+.AFBackground2BorderColor:alias {
+    color: #E7E8EB; 
+}
+
+.AFBrandingBackgroundColor:alias {
+    color: #3BAFDA; 
+}
+
+.AFBrandingBar {
+    height: 80px; 
+}
+
+.AFBrandingBarItem {
+  height: 200px;
+}
+
+.AFGlobalBackgroundColor:alias {
+    color: #AAB2BD; 
+}
+
 
  
 
@@ -537,7 +560,7 @@ Infrequently used specialty color alias
 @import "_menus.scss";
 @import "_panels.scss";
 @import "_tabs.scss";
-
+@import "_panelAccordian.scss";
 
 
 af|button{
@@ -560,6 +583,9 @@ af|panelTabbed{
   z-index: 1;
 }
 
+af|panelAccordion{
+   z-index: 1;
+}
 
 
 
